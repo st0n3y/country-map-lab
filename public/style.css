@@ -1,0 +1,38 @@
+body {
+  background-image: url( "https://s-media-cache-ak0.pinimg.com/736x/47/95/db/4795dba31d3c4e58d48c541fe91ee500.jpg" );
+  background-repeat: no-repeat;
+  background-size: 900px 570px;
+  background-position: center;
+}
+
+#map {
+  position: fixed;
+  width: 700px;
+  height: 400px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #ccc;
+  color: #9f9009;
+  font-size: 2.5em;
+  padding-top: 10px;
+}
+
+#plaque {
+  width: 250px;
+  height: 60px;
+  background-color: #b0a112;
+  margin-bottom: -50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 37px;
+}
+
+#countries {
+
+}
