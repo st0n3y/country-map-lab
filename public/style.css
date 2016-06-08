@@ -1,8 +1,8 @@
 body {
-  background-image: url( "https://s-media-cache-ak0.pinimg.com/736x/47/95/db/4795dba31d3c4e58d48c541fe91ee500.jpg" );
+  background-image: url( "https://s-media-cache-ak0.pinimg.com/736x/47/95/db/4795dba31d3c4e58d48c541fe91ee500.jpg" ), url("http://3.bp.blogspot.com/_BcAY0c9j9oo/S-gKBHlYE5I/AAAAAAAAAdU/n4gfuXL5t6U/s1600/fancy+pattern+copy.jpg");
+  background-position: center, left top;
   background-repeat: no-repeat;
-  background-size: 900px 570px;
-  background-position: center;
+  background-size: 900px 570px, 1600px 800px;
 }
 
 #map {
@@ -18,21 +18,24 @@ body {
 h1 {
   text-align: center;
   text-shadow: -1px -1px 1px #000, 1px 1px 1px #ccc;
-  color: #9f9009;
+  color: #7c7212;
   font-size: 2.5em;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 #plaque {
-  width: 250px;
+  width: 350px;
   height: 60px;
   background-color: #b0a112;
   margin-bottom: -50px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 37px;
+  margin-top: 50px;
+  border-style: groove;
+  border-color: #9f9009;
+  border-width: 5px;
 }
 
 #countries {
-
+  margin: auto;
 }
