@@ -24,6 +24,7 @@ h1 {
 }
 
 .plaque {
+  position: relative;
   width: 350px;
   height: 60px;
   background-color: #b0a112;
@@ -42,7 +43,7 @@ h1 {
   position: absolute;
   top: -110%;
   left: -210%;
-  width: 200%;
+  width: 400%;
   height: 200%;
   opacity: 0;
   transform: rotate(30deg);
