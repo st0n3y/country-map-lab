@@ -1,3 +1,5 @@
+var markers = [];
+
 var Map = function( latLng, zoom ) {
   // 'google' references the Google API. '.maps' and '.Map' are built-in properties of the API.
   this.googleMap = new google.maps.Map( document.getElementById( "map" ), {
@@ -11,6 +13,10 @@ this.resetCenter = function( latLngObj ) {
 };
 
 this.addInfoWindow = function( latLng, title ) {
+  for( var m of markers ) {
+    m.setMap( null );
+  }
+
   var marker = this.addMarker( latLng, title );
   var infoWindow = new google.maps.InfoWindow( {
       content: title
@@ -26,7 +32,8 @@ this.addMarker = function( latLng, title ) {
     map: this.googleMap,
     title: title
   } )
+  markers.push( marker );
   return marker
 };
 
-}
+};

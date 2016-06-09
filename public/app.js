@@ -1,3 +1,5 @@
+
+
 window.onload = function() {
   var url = "https://restcountries.eu/rest/v1"
   var request = new XMLHttpRequest();
@@ -11,7 +13,7 @@ window.onload = function() {
     }
   }
   request.send( null )
-}
+};
 
 var main = function( countries ) {
 
@@ -34,7 +36,7 @@ var main = function( countries ) {
   
   //This will make div 'info' visible, as display is set to 'none' in index.html.
   document.querySelector( "#info" ).style.display = "block";
-}
+};
 
 var populateSelect = function( countries, map ) {
   var parent = document.querySelector( "#countries" );
@@ -56,13 +58,13 @@ var populateSelect = function( countries, map ) {
     localStorage.setItem( "selectedCountry", JSON.stringify( country ) );
     updateDisplay( country, this.map );
   } );
-}
+};
 
 var updateDisplay = function( country, map ) {
   var name = country.name;
   var pop = country.population;
   var cap = country.capital;
-  var infoText = name + " -- Capital: " + cap + " -- Population: " + pop
+  var infoText = name + "<br>" + "Capital: " + cap + "<br>" + "Population: " + pop
 
   var center = {lat: country.latlng[0], lng: country.latlng[1]}
   map.resetCenter( center )
